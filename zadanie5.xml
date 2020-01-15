@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE sklep [
+<!ELEMENT sklep (miesny, odziezowy, warzywny)>
+<!ELEMENT miesny (polka1, polka2)>
+<!ELEMENT odziezowy (polka1, polka2)>
+<!ELEMENT warzywny (polka1, polka2)>
+<!ELEMENT polka1 (bialy, magazine)>
+<!ATTLIST polka1 domain CDATA #REQUIRED>
+<!ELEMENT polka2 (book, magazine)>
+<!ATTLIST polka2 domain CDATA #REQUIRED>
+<!ELEMENT magazine (title, author)>
+<!ELEMENT bialy (title, author)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+
+]>
+
+<sklep>
+	<miesny>
+		<polka1 domain="Kurczak">
+			<bialy>
+				<title>Jas i Malgosia</title>
+				<author>Nieznany</author>
+			</bialy>
+			<magazine>
+				<title>Malgos i Jasia</title>
+				<author>Bardziej Nieznany</author>
+			</magazine>
+		</polka1>
+		<polka2 domain="Swinka">
+			<book>
+				<title>Jas i Malgosia</title>
+				<author>Nieznany</author>
+			</book>
+			<magazine>
+				<title>Malgos i Jasia</title>
+				<author>Bardziej Nieznany</author>
+			</magazine>
+		</polka2>
+	</miesny>
+	<odziezowy>
+		<polka1 domain="Koszulki">
+			<book>
+				<title>Jas i Malgosia</title>
+				<author>Nieznany</author>
+			</book>
+			<magazine>
+				<title>Malgos i Jasia</title>
+				<author>Bardziej Nieznany</author>
+			</magazine>
+		</polka1>
+		<polka2 domain="Spodnie">
+			<book>
+				<title>Jas i Malgosia</title>
+				<author>Nieznany</author>
+			</book>
+			<magazine>
+				<title>Malgos i Jasia</title>
+				<author>Bardziej Nieznany</author>
+			</magazine>
+		</polka2>
+	</odziezowy>
+	<warzywny>
+		<polka1 domain="Cebule">
+			<book>
+				<title>Jas i Malgosia</title>
+				<author>Nieznany</author>
+			</book>
+			<magazine>
+				<title>Malgos i Jasia</title>
+				<author>Bardziej Nieznany</author>
+			</magazine>
+		</polka1>
+		<polka2 domain="Pomidory">
+			<book>
+				<title>Jas i Malgosia</title>
+				<author>Nieznany</author>
+			</book>
+			<magazine>
+				<title>Malgos i Jasia</title>
+				<author>Bardziej Nieznany</author>
+			</magazine>
+		</polka2>
+	</warzywny>
+</sklep>
